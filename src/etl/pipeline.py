@@ -5,9 +5,9 @@ from config.params import (
     COMPETENCES_COLLECTION,
     QUALITES_PROFESSIONNELLES_COLLECTION,
     OFFERS_COLLECTION, MAX_OFFRES, get_filename)
-from src.api_connector import get_all_offers
-import src.data_transformer as dt
-from src.db_connector import insert_documents
+from src.etl.api_connector import get_all_offers
+import src.etl.data_transformer as dt
+from src.etl.db_connector import insert_documents
 from re import sub as re_sub
 
 def main():
